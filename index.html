@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Austin Teh | Real Estate Agent, Singapore</title>
+<meta name="description" content="Austin Teh is a Singapore-based real estate agent helping buyers, sellers and investors move forward with confidence. Message on WhatsApp for a same-day reply.">
+
+<!-- Open Graph: replace og:image with a hosted 1200x630 image once you have one -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Austin Teh | Real Estate Agent, Singapore">
+<meta property="og:description" content="Property advice that feels like talking to a friend. Message Austin on WhatsApp for honest, no-pressure guidance on buying, selling or renting in Singapore.">
+<meta property="og:image" content="https://your-domain.com/og-image.jpg">
+<meta property="og:url" content="https://your-domain.com">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Austin Teh | Real Estate Agent, Singapore">
+<meta name="twitter:description" content="Property advice that feels like talking to a friend. Message Austin on WhatsApp for honest, no-pressure guidance on buying, selling or renting in Singapore.">
+<meta name="twitter:image" content="https://your-domain.com/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --bg: #F7F6F2;
+    --panel: #F0EFE9;
+    --surface: #FFFFFF;
+    --surface-2: #E3EFE6;
+    --ink: #1C1C1A;
+    --ink-soft: #5B5B56;
+    --accent: #1F4D36;
+    --accent-soft: #E3EFE6;
+    --accent-ink: #FFFFFF;
+    --sage: #4A9F6E;
+    --sage-soft: #6FB68A;
+    --line: rgba(28,28,26,0.13);
+    --shadow: rgba(28,28,26,0.14);
+    --footer-bg: #1C1C1A;
+    --footer-ink: #F4F3EF;
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #15170F;
+      --panel: #1B1D15;
+      --surface: #212319;
+      --surface-2: #24352A;
+      --ink: #F1F0EC;
+      --ink-soft: #ACAFA3;
+      --accent: #3E8A61;
+      --accent-soft: #24352A;
+      --accent-ink: #0F150F;
+      --sage: #6FB68A;
+      --sage-soft: #4A9F6E;
+      --line: rgba(241,240,236,0.14);
+      --shadow: rgba(0,0,0,0.4);
+      --footer-bg: #0E0F0B;
+      --footer-ink: #F1F0EC;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #15170F; --panel: #1B1D15; --surface: #212319; --surface-2: #24352A;
+    --ink: #F1F0EC; --ink-soft: #ACAFA3; --accent: #3E8A61; --accent-soft: #24352A;
+    --accent-ink: #0F150F; --sage: #6FB68A; --sage-soft: #4A9F6E;
+    --line: rgba(241,240,236,0.14); --shadow: rgba(0,0,0,0.4);
+    --footer-bg: #0E0F0B; --footer-ink: #F1F0EC;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3{
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  p{ margin: 0; }
+  a{ color: inherit; }
+  img{ max-width: 100%; display:block; }
+  button{ font-family: inherit; }
+
+  .wrap{ max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+  .nav.wrap{ padding: 0 44px; }
+
+  /* ---------- Announcement bar ---------- */
+  .announce{
+    background: var(--accent-soft);
+    color: var(--ink);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 11px 20px;
+  }
+  .announce a{
+    color: var(--accent);
+    text-decoration: underline;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+
+  /* ---------- Nav ---------- */
+  header{
+    background: var(--bg);
+    border-bottom: 1px solid transparent;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 20px 0;
+    gap: 24px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:9px;
+    font-family:'Lora', serif;
+    font-weight:600;
+    font-size: 1.2rem;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    text-decoration:none;
+    flex-shrink:0;
+    text-transform: uppercase;
+  }
+  .brand .mark{
+    width: 26px; height: 26px; border-radius: 7px;
+    background: var(--accent);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--accent-ink);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: none;
+  }
+  .navlinks{
+    display:flex;
+    gap: 28px;
+    list-style:none;
+    margin:0; padding:0;
+  }
+  .navlinks a{
+    text-decoration:none;
+    font-size: 0.92rem;
+    color: var(--ink);
+    transition: color .2s ease;
+  }
+  .navlinks a:hover{ color: var(--accent); }
+  .nav-right{ display:flex; align-items:center; gap: 12px; flex-shrink:0; }
+  .nav-tel{ font-size: 0.85rem; color: var(--ink-soft); white-space:nowrap; margin-right: 6px; }
+  .nav-ghost{
+    display:inline-flex; align-items:center; gap:8px;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    padding: 9px 18px;
+    border-radius: 8px;
+    text-decoration:none;
+    font-size: 0.86rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: border-color .18s ease, background .18s ease;
+  }
+  .nav-ghost:hover{ border-color: var(--accent); }
+  .nav-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 10px 19px;
+    border-radius: 8px;
+    text-decoration:none;
+    font-size: 0.86rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .nav-cta:hover{ transform: translateY(-1px); box-shadow: 0 6px 16px var(--shadow); }
+
+  @media (max-width: 900px){
+    .navlinks, .nav-tel{ display:none; }
+    .nav.wrap{ padding: 0 24px; }
+  }
+
+  /* ---------- Hero: inset banner card ---------- */
+  .hero-outer{
+    padding: 28px 24px 0;
+  }
+  .hero-full{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 28px;
+    min-height: 62vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    padding: 90px 24px;
+    text-align:center;
+    background: var(--accent);
+  }
+  .hero-bg{ position:absolute; inset:0; z-index:0; opacity: 0.5; }
+  .hero-bg svg{ width:100%; height:100%; display:block; }
+  .hero-inner{ position:relative; z-index:2; max-width: 720px; margin:0 auto; }
+  .hero-badge{
+    display:inline-flex; align-items:center; gap: 10px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.28);
+    color: #FFFFFF;
+    padding: 9px 18px;
+    border-radius: 100px;
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .hero-badge .dot{ width:6px; height:6px; border-radius:50%; background: var(--sage); }
+  .hero-full h1{
+    font-family:'Lora', serif;
+    font-weight: 500;
+    font-size: clamp(2.2rem, 4.6vw, 3.4rem);
+    color: #FFFFFF;
+    line-height: 1.16;
+  }
+  .hero-full .hero-sub{
+    margin-top: 20px;
+    font-size: 1.08rem;
+    color: rgba(255,255,255,0.8);
+    max-width: 50ch;
+    margin-left:auto; margin-right:auto;
+  }
+  .hero-btn-row{
+    margin-top: 32px;
+    display:flex; align-items:center; justify-content:center; gap: 14px; flex-wrap:wrap;
+  }
+  .btn-hero-ghost{
+    display:inline-flex; align-items:center; gap:8px;
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid rgba(255,255,255,0.45);
+    padding: 13px 26px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration:none;
+    font-size: 0.96rem;
+    transition: background .18s ease, border-color .18s ease;
+  }
+  .btn-hero-ghost:hover{ background: rgba(255,255,255,0.1); border-color: #FFFFFF; }
+  .btn-hero-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    background: #FFFFFF;
+    color: var(--accent);
+    padding: 13px 26px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration:none;
+    font-size: 0.96rem;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-hero-cta:hover{ transform: translateY(-2px); box-shadow: 0 14px 28px rgba(0,0,0,0.28); }
+  @media (max-width: 700px){
+    .hero-full{ min-height: auto; padding: 64px 24px; border-radius: 20px; }
+    .hero-outer{ padding: 16px 16px 0; }
+  }
+
+  /* ---------- Intro two-column ---------- */
+  .intro-split{
+    padding: 96px 0 40px;
+    display:grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    gap: 56px;
+  }
+  .intro-split h2{
+    font-family:'Lora', serif;
+    font-weight: 500;
+    font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+    color: var(--ink);
+    line-height: 1.22;
+  }
+  .intro-split h2 em{
+    font-style: normal;
+    color: var(--accent);
+  }
+  .intro-split .intro-actions{
+    margin-top: 30px;
+    display:flex; gap: 12px; flex-wrap: wrap;
+  }
+  .btn-solid-sm{
+    display:inline-flex; align-items:center; gap:8px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 11px 20px;
+    border-radius: 8px;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border:none; cursor:pointer;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-solid-sm:hover{ transform: translateY(-2px); box-shadow: 0 8px 18px var(--shadow); }
+  .btn-ghost-sm{
+    display:inline-flex; align-items:center; gap:8px;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    padding: 11px 20px;
+    border-radius: 8px;
+    text-decoration:none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: border-color .18s ease;
+  }
+  .btn-ghost-sm:hover{ border-color: var(--accent); }
+  .intro-split .intro-text{
+    padding-top: 10px;
+  }
+  .intro-split .intro-text p{
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+    max-width: 42ch;
+  }
+  @media (max-width: 800px){
+    .intro-split{ grid-template-columns: 1fr; gap: 26px; padding-top: 64px; }
+  }
+
+  /* ---------- Start-conversation card section ---------- */
+  .talk-section{
+    background: var(--panel);
+    padding: 90px 0;
+  }
+  .talk-head{ text-align:center; max-width: 560px; margin: 0 auto 40px; }
+  .talk-head h2{ font-size: clamp(1.7rem, 3vw, 2.2rem); color: var(--ink); }
+  .talk-head p{ margin-top: 14px; color: var(--ink-soft); font-size: 1.02rem; }
+  .app-card{
+    position: relative;
+    z-index: 2;
+    background: var(--surface);
+    border-radius: 20px;
+    box-shadow: 0 30px 60px var(--shadow);
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .card-tabs{
+    display:flex;
+    gap: 6px;
+    background: var(--panel);
+    padding: 5px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+  }
+  .card-tabs button{
+    flex:1;
+    border: none;
+    background: transparent;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: background .18s ease, color .18s ease;
+  }
+  .card-tabs button.active{
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: 0 2px 6px var(--shadow);
+  }
+  .card-badges{
+    display:flex; flex-wrap:wrap; gap: 8px;
+    margin-bottom: 18px;
+  }
+  .card-badges span{
+    display:inline-flex; align-items:center; gap:6px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 6px 11px;
+    border-radius: 100px;
+    font-size: 0.76rem;
+    color: var(--ink-soft);
+  }
+  .card-badges svg{ width:12px; height:12px; color: var(--sage); flex-shrink:0; }
+  .card-textarea{
+    width: 100%;
+    min-height: 108px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--panel);
+    padding: 14px 16px;
+    font-family: inherit;
+    font-size: 0.94rem;
+    color: var(--ink);
+    resize: vertical;
+    margin-bottom: 14px;
+  }
+  .card-textarea::placeholder{ color: var(--ink-soft); }
+  .card-chip-row{ display:flex; flex-wrap:wrap; gap: 8px; align-items:center; margin-bottom: 20px; }
+  .card-chip-row .label{ font-size: 0.8rem; color: var(--ink-soft); margin-right: 2px; }
+  .chip{
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 7px 13px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background .15s ease, border-color .15s ease;
+  }
+  .chip:hover{ background: var(--panel); border-color: var(--accent); }
+  .card-footer{
+    display:flex; align-items:center; justify-content:space-between; gap: 12px;
+    flex-wrap: wrap;
+  }
+  .card-footer .note{ font-size: 0.78rem; color: var(--ink-soft); }
+  .btn-send{
+    background: var(--sage);
+    color: #FBF9F2;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    cursor: pointer;
+    display:inline-flex; align-items:center; gap:8px;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-send:hover{ transform: translateY(-2px); box-shadow: 0 8px 18px var(--shadow); }
+
+  /* ---------- Section shell ---------- */
+  section{ padding: 88px 0; }
+  .section-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap: 24px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 24px;
+  }
+  .section-head h2{ font-size: clamp(1.7rem, 3vw, 2.2rem); }
+  .section-head .index{
+    font-family:'Lora', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 1rem;
+    white-space:nowrap;
+  }
+
+  /* ---------- About ---------- */
+  .about{ display:grid; grid-template-columns: 0.62fr 1fr; gap: 56px; }
+  .about-photo{
+    aspect-ratio: 3/4;
+    border-radius: 20px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    text-align:center;
+    padding: 24px;
+  }
+  .about-body p{ margin-bottom: 18px; color: var(--ink-soft); max-width: 58ch; text-align: justify; text-justify: inter-word; }
+  .about-body p:last-of-type{ margin-bottom: 0; }
+  .credentials{ margin-top: 28px; display:flex; flex-wrap:wrap; gap: 12px; }
+  .credentials span{
+    border: 1px solid var(--line);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.84rem;
+    color: var(--ink-soft);
+  }
+  @media (max-width: 760px){
+    .about{ grid-template-columns: 1fr; }
+    .about-photo{ max-width: 260px; }
+  }
+
+  /* ---------- Services ---------- */
+  .service-row{
+    display:grid;
+    grid-template-columns: 44px 1fr;
+    gap: 22px;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .service-row:first-of-type{ padding-top: 0; }
+  .service-row:last-of-type{ border-bottom:none; padding-bottom: 0; }
+  .service-icon{
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: var(--panel);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--sage);
+    flex-shrink:0;
+  }
+  .service-icon svg{ width: 22px; height: 22px; }
+  .service-content h3{ font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; }
+  .service-content p{ color: var(--ink-soft); max-width: 62ch; font-size: 0.98rem; text-align: justify; text-justify: inter-word; }
+
+  /* ---------- Why choose me ---------- */
+  .why-grid{
+    display:grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+    background: var(--line); border: 1px solid var(--line);
+    border-radius: 20px; overflow:hidden;
+  }
+  .why-card{ background: var(--bg); padding: 34px; }
+  .why-card .num{
+    font-family:'Lora', serif; font-style: italic; color: var(--accent);
+    font-size: 1.4rem; display:block; margin-bottom: 14px;
+  }
+  .why-card h3{ font-size: 1.08rem; margin-bottom: 10px; }
+  .why-card p{ color: var(--ink-soft); font-size: 0.95rem; }
+  @media (max-width: 700px){ .why-grid{ grid-template-columns: 1fr; } }
+
+  .testimonial{
+    margin-top: 56px;
+    background: var(--panel);
+    border-radius: 20px;
+    padding: 44px;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items:flex-start;
+  }
+  .testimonial .quote-mark{
+    font-family:'Lora', serif;
+    font-size: 3.2rem;
+    color: var(--accent);
+    line-height: 0.6;
+    margin-top: 12px;
+  }
+  .testimonial blockquote{
+    margin:0;
+    font-family:'Lora', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .testimonial cite{
+    display:block; margin-top: 18px;
+    font-style: normal; font-size: 0.88rem; color: var(--ink-soft);
+  }
+  @media (max-width: 600px){ .testimonial{ grid-template-columns: 1fr; padding: 30px; } }
+
+  /* ---------- Contact band ---------- */
+  .contact-band{
+    background: var(--sage);
+    color: #FBF9F2;
+    border-radius: 28px;
+    padding: 64px 48px;
+    display:grid;
+    grid-template-columns: 1.2fr auto;
+    gap: 32px;
+    align-items:center;
+  }
+  .contact-band h2{ color: #FBF9F2; font-size: clamp(1.7rem, 3vw, 2.3rem); max-width: 16ch; }
+  .contact-band p{ margin-top: 14px; color: rgba(251,249,242,0.82); max-width: 46ch; font-size: 1rem; }
+  .btn-wa{
+    background: #FBF9F2; color: var(--sage);
+    padding: 16px 30px; border-radius: 100px;
+    text-decoration:none; font-weight: 600; font-size: 1.02rem;
+    display:inline-flex; align-items:center; gap: 10px;
+    white-space: nowrap;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-wa:hover{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.25); }
+  @media (max-width: 700px){ .contact-band{ grid-template-columns: 1fr; padding: 40px 28px; } }
+
+  /* ---------- Footer ---------- */
+  footer.site-footer{
+    background: var(--footer-bg);
+    color: var(--footer-ink);
+    padding: 30px 0;
+  }
+  .footer-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .footer-brand{ display:flex; align-items:center; gap: 12px; }
+  .footer-brand .mark{
+    width: 34px; height: 34px; border-radius: 10px;
+    background: var(--accent);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--accent-ink); font-weight:700; font-family:'Lora',serif;
+  }
+  .footer-brand span{ font-family:'Lora', serif; font-weight:600; font-size: 1.1rem; }
+  .footer-meta{ font-size: 0.84rem; color: rgba(243,234,218,0.65); text-align:left; }
+  .footer-meta a{ color: var(--footer-ink); text-decoration:underline; }
+
+  /* ---------- FAQ ---------- */
+  .faq-list{ display:flex; flex-direction:column; gap: 12px; max-width: 760px; }
+  .faq-item{
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .faq-item summary{
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 16px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item .plus{
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    flex-shrink:0;
+    position: relative;
+  }
+  .faq-item .plus::before, .faq-item .plus::after{
+    content:'';
+    position:absolute;
+    background: var(--ink-soft);
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+  }
+  .faq-item .plus::before{ width:9px; height:1.4px; }
+  .faq-item .plus::after{ width:1.4px; height:9px; transition: transform .2s ease; }
+  .faq-item[open] .plus::after{ transform: translate(-50%,-50%) rotate(90deg); opacity: 0; }
+  .faq-item .faq-answer{
+    padding: 0 24px 22px;
+    color: var(--ink-soft);
+    font-size: 0.96rem;
+    max-width: 62ch;
+  }
+
+  /* ---------- Sticky WhatsApp button ---------- */
+  .sticky-wa{
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 50;
+    background: var(--sage);
+    color: #FFFFFF;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    box-shadow: 0 10px 28px var(--shadow);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .sticky-wa:hover{ transform: translateY(-3px) scale(1.04); box-shadow: 0 14px 32px var(--shadow); }
+  .sticky-wa svg{ width: 27px; height: 27px; }
+  .sticky-wa .ping{
+    position:absolute;
+    inset:0;
+    border-radius:50%;
+    background: var(--sage);
+    opacity: 0.55;
+    animation: wa-ping 2.4s ease-out infinite;
+  }
+  @keyframes wa-ping{
+    0%{ transform: scale(1); opacity: 0.45; }
+    100%{ transform: scale(1.6); opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce){ .sticky-wa .ping{ animation: none; display:none; } }
+
+  /* ---------- Booking ---------- */
+  .booking-shell{
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: 0 10px 30px var(--shadow);
+    padding: 56px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .booking-copy h3{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .booking-copy p{
+    color: var(--ink-soft);
+    max-width: 46ch;
+    font-size: 0.98rem;
+  }
+  .booking-icon{
+    width: 62px; height: 62px;
+    border-radius: 16px;
+    background: var(--panel);
+    color: var(--sage);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom: 18px;
+    flex-shrink:0;
+  }
+  .booking-icon svg{ width: 28px; height: 28px; }
+  .booking-actions{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .booking-note{ font-size: 0.82rem; color: var(--ink-soft); }
+  @media (max-width: 700px){
+    .booking-shell{ padding: 36px 28px; flex-direction: column; align-items: flex-start; }
+  }
+
+  ::selection{ background: var(--accent); color: var(--accent-ink); }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="announce">
+  New: Project launching with direct MRT access.
+  <a href="#contact">Ask me about it →</a>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="mark">AT</span>
+      Austin Teh
+    </a>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Me</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#book">Book a Call</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-tel">+65 8188 3141</span>
+      <a class="nav-ghost" href="#contact">Contact</a>
+      <a class="nav-cta" href="#book">Book a Call</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero-outer">
+  <section class="hero-full" id="hero">
+    <div class="hero-bg">
+      <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <pattern id="diamonds" width="56" height="56" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="56" height="56" fill="none"/>
+            <rect width="28" height="28" fill="#FFFFFF" opacity="0.05"/>
+          </pattern>
+        </defs>
+        <rect width="800" height="500" fill="url(#diamonds)"/>
+      </svg>
+    </div>
+
+    <div class="hero-inner">
+      <span class="hero-badge"><span class="dot"></span> Free home valuation this month</span>
+      <h1>Real estate advice that sounds like a friend, not a pitch.</h1>
+      <p class="hero-sub">I'm Austin — an independent, CEA-registered agent helping buyers, sellers and investors across Singapore move forward with confidence.</p>
+      <div class="hero-btn-row">
+        <a class="btn-hero-ghost" href="#about">Learn more</a>
+        <a class="btn-hero-cta" href="#book">Book a Call</a>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- Intro two-column -->
+  <div class="wrap">
+    <section class="intro-split">
+      <div>
+        <h2>Property advice, handled with <em>care and clarity</em></h2>
+        <div class="intro-actions">
+          <a class="btn-solid-sm" href="https://wa.me/6581883141" target="_blank" rel="noopener">Message Me</a>
+          <a class="btn-ghost-sm" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="intro-text">
+        <p>Most of my clients still come to me through word of mouth. I built this page so new clients can get to know me the same way — before we even speak — and see exactly how I work with buyers, sellers and investors across Singapore.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Start the conversation -->
+  <section class="talk-section">
+    <div class="wrap">
+      <div class="talk-head">
+        <h2>Not ready for a call? Start here.</h2>
+        <p>Tell me a little about what you're looking for and I'll get back to you on WhatsApp — usually the same day.</p>
+      </div>
+
+      <div class="app-card">
+        <div class="card-tabs">
+          <button type="button" class="active" data-mode="buying">I'm Buying</button>
+          <button type="button" data-mode="selling">I'm Selling</button>
+        </div>
+
+        <div class="card-badges">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Same-day reply</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>No-obligation advice</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>CEA Registered</span>
+        </div>
+
+        <textarea class="card-textarea" id="waText" placeholder="e.g. Looking for a 3-room HDB near Tampines MRT, budget around $550k"></textarea>
+
+        <div class="card-chip-row" id="chipRow">
+          <span class="label">Try:</span>
+        </div>
+
+        <div class="card-footer">
+          <span class="note">I'll reply personally, usually the same day.</span>
+          <button class="btn-send" id="sendBtn" type="button">
+            Send via WhatsApp
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <div class="wrap">
+    <section id="about">
+      <div class="section-head">
+        <h2>A quick introduction</h2>
+        <span class="index">01 — About</span>
+      </div>
+      <div class="about">
+        <div class="about-photo">Headshot placeholder<br>— swap in your photo here —</div>
+        <div class="about-body">
+          <p>Hi, I'm Austin — a full-time real estate agent based in Singapore. Before real estate, I spent years [add your background here, e.g. in banking / engineering / customer service], which taught me to listen first and sell second. That's still how I work today.</p>
+          <p>I started this website because most of my clients have found me through friends and family — and I wanted a place where new clients could get to know me the same way, before we even speak.</p>
+          <p>Whether you're selling your first flat, hunting for your dream condo, or exploring your first investment property, I'll walk you through it clearly, honestly, and at your own pace.</p>
+          <div class="credentials">
+            <span>CEA Reg. No. R061815F</span>
+            <span>7 years in real estate</span>
+            <span>$20M+ in properties transacted</span>
+            <span>Asiapac Real Estate Services Pte. Ltd.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Services -->
+  <div class="wrap">
+    <section id="services">
+      <div class="section-head">
+        <h2>What I can help you with</h2>
+        <span class="index">02 — Services</span>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9.5h14V10"/><path d="M9.5 19.5V14h5v5.5"/></svg></div>
+        <div class="service-content">
+          <h3>Residential sale &amp; purchase</h3>
+          <p>End-to-end support for buying or selling HDB flats, condominiums and landed homes — from pricing strategy and marketing to negotiation and paperwork.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <div class="service-content">
+          <h3>Rentals &amp; leasing</h3>
+          <p>Finding the right tenant or the right home to rent, with support on viewings, tenancy agreements, and managing the handover process smoothly.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5m0 14h16M8 15l3-4 3 3 4-6"/></svg></div>
+        <div class="service-content">
+          <h3>Property consultation &amp; investment advice</h3>
+          <p>Not sure whether to upgrade, downgrade, or invest? I'll walk through the numbers, timelines and market outlook with you before you commit to anything.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v6M12 3l-4 4M12 3l4 4"/><rect x="4" y="11" width="16" height="10" rx="1.5"/></svg></div>
+        <div class="service-content">
+          <h3>New launch projects</h3>
+          <p>Priority updates and honest reviews on upcoming new launches, so you can weigh new developments against resale options with a clear head.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Why choose me -->
+  <div class="wrap">
+    <section id="why">
+      <div class="section-head">
+        <h2>Why work with me</h2>
+        <span class="index">03 — Why me</span>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="num">01</span>
+          <h3>Local, on-the-ground expertise</h3>
+          <p>I know Singapore's neighbourhoods block by block — not just the listing price, but the school zones, renovation quirks, and resale trends that actually matter.</p>
+        </div>
+        <div class="why-card">
+          <span class="num">02</span>
+          <h3>No pressure, ever</h3>
+          <p>I'd rather you take an extra week to feel sure than rush into the wrong home. My job is to inform you, not to close you.</p>
+        </div>
+        <div class="why-card">
+          <span class="num">03</span>
+          <h3>Always reachable</h3>
+          <p>Questions don't keep office hours, so neither do I. Message me on WhatsApp any time and expect a reply the same day.</p>
+        </div>
+        <div class="why-card">
+          <span class="num">04</span>
+          <h3>Track record you can check</h3>
+          <p>7 years in the industry, with more than $20 million worth of properties transacted — and clients who've come back for their second and third moves.</p>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <span class="quote-mark">&#8220;</span>
+        <div>
+          <blockquote>Austin made our first home purchase so much less stressful than we expected. He explained every step and never once made us feel rushed.</blockquote>
+          <cite>— [Client name], [HDB / Condo] buyer, [Year] &nbsp;·&nbsp; <em>replace with a real testimonial</em></cite>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FAQ -->
+  <div class="wrap">
+    <section id="faq">
+      <div class="section-head">
+        <h2>Questions people usually ask</h2>
+        <span class="index">04 — FAQ</span>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Does it cost anything to talk to you?<span class="plus"></span></summary>
+          <div class="faq-answer">No — an initial conversation, market read, or valuation is free and comes with no obligation. [Confirm your commission structure and when it applies, then update this answer.]</div>
+        </details>
+        <details class="faq-item">
+          <summary>How long does a typical sale take?<span class="plus"></span></summary>
+          <div class="faq-answer">[Add your honest timeline here, e.g. "Most HDB resale transactions I've handled complete within X-Y months from listing to key collection, depending on the buyer's loan and MOP status."]</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you handle the paperwork too?<span class="plus"></span></summary>
+          <div class="faq-answer">Yes — I guide you through option-to-purchase, HDB or private paperwork, and coordinate with lawyers and bankers so you're not chasing documents on your own. [Adjust to reflect exactly what you cover.]</div>
+        </details>
+        <details class="faq-item">
+          <summary>Which areas in Singapore do you specialise in?<span class="plus"></span></summary>
+          <div class="faq-answer">[List your core neighbourhoods here, e.g. "I work most actively in Tampines, Bishan and Sengkang, but I'm happy to help anywhere in Singapore."]</div>
+        </details>
+        <details class="faq-item">
+          <summary>What if I'm just exploring, not ready to buy or sell yet?<span class="plus"></span></summary>
+          <div class="faq-answer">That's completely fine — a lot of my conversations start this way. Message me and I'll give you an honest read on your options, with zero pressure to act now.</div>
+        </details>
+      </div>
+    </section>
+  </div>
+
+  <!-- Booking -->
+  <div class="wrap">
+    <section id="book">
+      <div class="section-head">
+        <h2>Book a time to chat</h2>
+        <span class="index">05 — Schedule</span>
+      </div>
+      <p style="color:var(--ink-soft); max-width:60ch; margin-bottom:28px;">Prefer to talk it through on a call? Choose a slot that works for you — this syncs directly with my calendar, so you'll only see times I'm actually free.</p>
+
+      <div class="booking-shell">
+        <div class="booking-copy">
+          <div class="booking-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          </div>
+          <h3>Grab 30 minutes on my calendar</h3>
+          <p>No back-and-forth needed — pick whatever time suits you and it's confirmed instantly. I'll get a heads-up and we'll take it from there.</p>
+        </div>
+        <div class="booking-actions">
+          <a class="btn-primary" href="https://calendly.com/tehjianfann/30min" target="_blank" rel="noopener">
+            Choose a time
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <span class="booking-note">Opens in a new tab on Calendly</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact -->
+  <div class="wrap">
+    <section id="contact" style="padding-top:0;">
+      <div class="contact-band">
+        <div>
+          <h2>Thinking about your next move?</h2>
+          <p>Drop me a message on WhatsApp — no forms, no waiting. I usually reply within the day.</p>
+        </div>
+        <a class="btn-wa" href="https://wa.me/6581883141" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.35.19 1.86.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35ZM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.53 3.7-8.22 8.25-8.22 2.2 0 4.27.86 5.83 2.41a8.16 8.16 0 0 1 2.41 5.82c0 4.53-3.7 8.21-8.25 8.21Z"/></svg>
+          Message on WhatsApp
+        </a>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="mark">AT</span>
+      <span>Austin Teh</span>
+    </div>
+    <div class="footer-meta">
+      © 2026 Austin Teh · Asiapac Real Estate Services Pte. Ltd. · CEA Reg. No. R061815F<br>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<a class="sticky-wa" href="https://wa.me/6581883141" target="_blank" rel="noopener" aria-label="Message Austin on WhatsApp">
+  <span class="ping"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor" style="position:relative;z-index:1;"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.35.19 1.86.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35ZM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.53 3.7-8.22 8.25-8.22 2.2 0 4.27.86 5.83 2.41a8.16 8.16 0 0 1 2.41 5.82c0 4.53-3.7 8.21-8.25 8.21Z"/></svg>
+</a>
+
+<script>
+  const chipSets = {
+    buying: ["3-room HDB near an MRT", "Condo under $1.5m", "Investment property advice"],
+    selling: ["Get a free valuation", "Sell my HDB", "Sell my condo"]
+  };
+  const placeholders = {
+    buying: "e.g. Looking for a 3-room HDB near Tampines MRT, budget around $550k",
+    selling: "e.g. I'm thinking of selling my 4-room flat in Bishan, what's it worth?"
+  };
+  const tabs = document.querySelectorAll('.card-tabs button');
+  const chipRow = document.getElementById('chipRow');
+  const textarea = document.getElementById('waText');
+
+  function renderChips(mode){
+    chipRow.innerHTML = '<span class="label">Try:</span>';
+    chipSets[mode].forEach(text => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'chip';
+      chip.textContent = text;
+      chip.addEventListener('click', () => { textarea.value = text; textarea.focus(); });
+      chipRow.appendChild(chip);
+    });
+    textarea.placeholder = placeholders[mode];
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      renderChips(tab.dataset.mode);
+    });
+  });
+
+  renderChips('buying');
+
+  document.getElementById('sendBtn').addEventListener('click', () => {
+    const msg = textarea.value.trim() || "Hi Austin, I'd like to find out more!";
+    const url = "https://wa.me/6581883141?text=" + encodeURIComponent(msg);
+    window.open(url, '_blank', 'noopener');
+  });
+</script>
+
+</body>
+</html>
